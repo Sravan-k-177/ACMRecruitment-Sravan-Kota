@@ -1,0 +1,11 @@
+#acm euler task-02
+fibonacci_series = [1, 2]
+summ = 0
+while True:
+    n = fibonacci_series[-1] + fibonacci_series[-2]
+    if n >= 4000000:
+        break
+    fibonacci_series.append(n)
+    if n % 2 == 0:
+        summ += n
+print(f'The sum is {summ}') 
