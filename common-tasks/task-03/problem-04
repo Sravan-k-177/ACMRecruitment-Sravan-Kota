@@ -1,0 +1,17 @@
+#euler problem-04
+#pythogorean triplet
+def pythagorean_triplet(sum):
+    for a in range(1, sum // 3):
+        for b in range(a + 1, (sum - a) // 2):
+            c = sum - a - b
+            if a**2 + b**2 == c**2:
+                return a, b, c
+    return None
+sum = 1000
+triplet = pythagorean_triplet(sum)
+
+if triplet:
+    a, b, c = triplet
+    print(f"The product of the triplet is: {a * b * c}")
+else:
+    print("No Pythagorean triplet found.")
