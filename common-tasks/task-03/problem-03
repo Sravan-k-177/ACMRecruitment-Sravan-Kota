@@ -1,0 +1,8 @@
+#euler task-03
+summ = 0
+sum_of_squares = 0
+for i in range(1,101):
+    sum_of_squares += i**2
+    summ += i
+summ **=2
+print(summ-sum_of_squares)
