@@ -18,10 +18,4 @@ def weather(city):
 while True:
     city = input("Which city's weather would you like to view?\n").strip() 
     weather(city)
-    ch=input("Do you want to check the weather of another city?\n")
-    if ch.lower()=="yes":
-        pass
-    elif ch.lower()=="no":
-        print("Thank you for choosing our services")
-        print("If you require any of our other services pls contact:7095419591 (lokesh)")
         break
